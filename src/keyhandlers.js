@@ -8,10 +8,11 @@ const handleKeyDown = (e, executeCommand) => {
   export default handleKeyDown;
   
 
-  export const handleCtrlL = (e, setCommandHistory) => {
+  export const handleCtrlL = (e, setCommandHistory, setCurrentCommandIndex) => {
     if (e.ctrlKey && e.key === 'l') {
       e.preventDefault();
       setCommandHistory([]);
+      setCurrentCommandIndex(0)
     }
   };
 

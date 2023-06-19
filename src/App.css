@@ -85,6 +85,9 @@ html {
 
 .output-p {
   margin-bottom: 0.5rem;
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .customInput {
@@ -96,4 +99,43 @@ html {
   font-size: inherit;
   caret-color:rgb(255, 215, 177);
   font-weight: 900;
+}
+
+
+.head-animation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: headAnimation 10s ease-in-out infinite;
+}
+
+@keyframes headAnimation {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg) scale(1);
+  }
+  12% {
+    transform: translate(-100%, 148%) rotate(90deg) scale(1.2);
+  }
+  25% {
+    transform: translate(150%, 100%) rotate(180deg) scale(1);
+  }
+  37% {
+    transform: translate(-220%, -180%) rotate(270deg) scale(0.8);
+  }
+  50% {
+    transform: translate(-150%, -150%) rotate(360deg) scale(1);
+  }
+  62% {
+    transform: translate(230%, 310%) rotate(90deg) scale(1.2);
+  }
+  75% {
+    transform: translate(-150%, 120%) rotate(180deg) scale(1);
+  }
+  87% {
+    transform: translate(200%, -148%) rotate(270deg) scale(0.8);
+  }
+  100% {
+    transform: translate(2000%, -50%) rotate(360deg) scale(1);
+  }
 }

@@ -21,7 +21,7 @@ const App = () => {
   const inputRef = useRef(null);
   const contentRef = useRef(null);
   const [currentCommandIndex, setCurrentCommandIndex] = useState(0);
-
+  
 
   useEffect(() => {
     //executeCommand('banner')
@@ -45,7 +45,7 @@ const App = () => {
 
   const handleKeyDownWrapper = (e) => {
     handleKeyDown(e, executeCommand); // Llama al handleKeyDown original
-    handleCtrlL(e, setCommandHistory); // Llama a handleCtrlL para Ctrl+L
+    handleCtrlL(e, setCommandHistory, setCurrentCommandIndex); // Llama a handleCtrlL para Ctrl+L
     handleArrowUp(e,currentCommandIndex, setInputText,commandHistory, setCurrentCommandIndex);
     handleArrowDown(e,currentCommandIndex, setInputText,commandHistory, setCurrentCommandIndex);
     setAutocompleteOptions('');
