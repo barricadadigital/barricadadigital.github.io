@@ -23,7 +23,8 @@ export const commands = {
         \`--{__________)        \\/
   
   Con 'help' puedes ver los comandos disponibles.
-  
+  Puedes limpiar la consola con 'ctrl+l', autocompletar con 'tab'
+  y además ver comandos anteriores con las 'flechas de dirección'
   --
   🎥 Escribe 'yt' y serás redirigido al canal de youtube
   💼 Escribe 'lk' y serás redirigido a mi Linkedin

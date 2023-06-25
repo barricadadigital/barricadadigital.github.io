@@ -24,7 +24,7 @@ const App = () => {
   
 
   useEffect(() => {
-    //executeCommand('banner')
+    executeCommand('banner')
     // Establecer el foco en el campo de entrada cuando se cargue la página
     inputRef.current.focus();
 
